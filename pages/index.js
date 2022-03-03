@@ -80,7 +80,7 @@ const mint = () => {
     checkCorrectNetwork()
   }, [])
 
-  // Creates transaction to mint NFT on clicking Mint Character button
+  // Creates transaction to mint NFT on clicking Mint
   const mintCharacter = async () => {
     try {
       const { ethereum } = window
@@ -151,7 +151,7 @@ const mint = () => {
   return (
     <div className="flex min-h-screen flex-col items-center bg-[#f3f6f4] pt-32 text-[#6a50aa]">
       <div className="trasition transition duration-500 ease-in-out hover:rotate-180 hover:scale-105"></div>
-      <h2 className="mb-20 mt-12 text-3xl font-bold">Mint your NFT!</h2>
+      <h2 className="mb-20 mt-12 text-3xl font-bold">Mint an NFT!</h2>
       {currentAccount === '' ? (
         <button
           className="mb-10 rounded-lg bg-[#f1c232] py-3 px-12 text-2xl font-bold transition duration-500 ease-in-out hover:scale-105"
