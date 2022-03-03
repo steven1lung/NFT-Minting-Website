@@ -175,10 +175,7 @@ const mint = () => {
         </div>
       )}
       <div className="mb-20 mt-4 text-xl font-semibold">
-        <a
-          href={`https://testnets.opensea.io/${nftContractAddress}`}
-          target="_blank"
-        >
+        <a href={`https://testnets.opensea.io/account`} target="_blank">
           <span className="hover:underline hover:underline-offset-8 ">
             View your nft
           </span>
@@ -188,9 +185,7 @@ const mint = () => {
         miningStatus === 0 ? (
           txError === null ? (
             <div className="flex flex-col items-center justify-center">
-              <div className="text-lg font-bold">
-                Processing your transaction
-              </div>
+              <div className="text-lg font-bold">Please Wait...</div>
             </div>
           ) : (
             <div className="text-lg font-semibold text-red-600">{txError}</div>
@@ -201,13 +196,8 @@ const mint = () => {
       ) : (
         <div className="flex flex-col items-center justify-center">
           <div className="mb-4 text-center text-lg font-semibold">
-            Your Eternal Domain Character
+            You have minted an NFT !
           </div>
-          <img
-            src={mintedNFT}
-            alt=""
-            className="h-60 w-60 rounded-lg shadow-2xl shadow-[#6FFFE9] transition duration-500 ease-in-out hover:scale-105"
-          />
         </div>
       )}
     </div>
